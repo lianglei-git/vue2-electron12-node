@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "nodemon app.js"
+    "serve": "nodemon app.js",
+    "build": "webpack"
   },
   "author": "",
   "license": "ISC",
@@ -15,7 +16,8 @@
     "微服务",
     "中后台"
   ],
-  "devDependencies": {
+  "devDependencies": {    
+    "@webpack-cli/generators": "^2.0.0",
     "dotenv": "^8.2.0",
     "koa": "^2.13.1",
     "koa-body": "^4.2.0",

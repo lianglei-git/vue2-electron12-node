@@ -3,6 +3,8 @@
 // 目前使用cjs，并没有统一规范mjs，mjs跟微服务不好做适配
 const minimist = require('minimist')
 
+require('./src/one.js')
+
 const Koa = require('koa')
 
 const Cors = require('koa2-cors')

@@ -12,6 +12,11 @@ const utils = {
      * @returns 
      */
     isDev: () => process.env.NODE_ENV == 'development',
+    /**
+     * 检测当前端口是否可用
+     * @param {*} port 
+     * @param {*} callback 
+     */
     portInUse: (port, callback) => {
         var server = net.createServer(function (socket) {
             socket.write('Echo server\r\n');
