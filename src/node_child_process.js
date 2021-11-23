@@ -55,7 +55,7 @@ const startSrever = (port) => {
     let argv0 = []
     let config = {
         env: process.env,
-        cwd:join(__dirname, '../../server'),// join(__dirname, '../server')
+        cwd:join(__dirname, '../server'),// join(__dirname, '../../server')
         shell: true
     }
     if (!isDev()) {
